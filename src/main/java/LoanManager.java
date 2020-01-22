@@ -5,6 +5,7 @@ public class LoanManager {
     public void addLoan(String borrower, int amount, double interestRate){
         loans[loansCount] = new Loan(borrower, amount, interestRate);
         loansCount++;
+        System.out.println(Loan.getMaxLoan());
     }
 
     public void setAsPaid(String borrower){
